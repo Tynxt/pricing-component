@@ -102,11 +102,12 @@ h2 {
     position: absolute;
     border-radius: 5%;
     height: 0.5em;
-    width: 50%;
+    width: 100%;
     background-color: var(--light-grayish-blue);
     margin-bottom: 3em;
     top: 1.25em;
     right: 0;
+    z-index: 0;
 }
 
 #full-line {
@@ -117,10 +118,11 @@ h2 {
     background-color: var(--soft-cyan);
     margin-bottom: 3em;
     top: 1.25em;
+    z-index: 1;
 }
 
 #slider {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     border-radius: 50%;
     background-color: var(--strong-cyan);

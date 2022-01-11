@@ -38,15 +38,16 @@ slider.addEventListener('mouseup', _ => {
 
 window.addEventListener('mouseup', _ => {
     pressed = false;
+    slider.style.cursor = 'grab';
 })
 
 window.addEventListener('mousemove', e => {
-    const posX = e.pageX - (window.innerWidth - sliderBar.offsetLeft) / 2;
-    if(pressed && posX >= 0 && posX <= sliderBar.offsetLeft) {
+    const width = sliderBar.getBoundingClientRect().width;
+    const posX = e.pageX - (window.innerWidth - width) / 2;
+    if(pressed && posX >= 0 && posX <= width) {
         slider.style.left = `calc(${posX}px - 1.5em)`;
         fullLine.style.width = `calc(${posX}px)`;
-        emptyLine.style.width = `calc(${sliderBar.offsetLeft}px - ${posX}px)`;
-        money.innerHTML = `$${Math.round(70 * 100 * posX / sliderBar.offsetLeft) / 100 }`;
+        money.innerHTML = `$${Math.round(70 * 100 * posX / width) / 100 }`;
     }
 })
 
