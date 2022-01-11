@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Outfit:wght@300&display=swap"
+          rel="stylesheet">
+    <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+<img id="bg" src="images/bg-pattern.svg" alt="">
+<img id="circle" src="images/pattern-circles.svg" alt="two empty circles">
+<h1>Simple, traffic-based pricing</h1>
+<h2>Sign-up for our 30-day trial. <span> No credit card required.</span></h2>
+<div class="card">
+    <div class="top">
+        <div class="head">
+            <p id="views">100K Pageviews</p>
+            <div class="money-wrapper">
+                <p id="money">$35.00</p>
+                <p> &nbsp; /month</p>
+            </div>
+        </div>
+            <div class="slider-bar">
+                <div id="slider"><img src="images/icon-slider.svg" alt=""></div>
+                <div id="empty-line"></div>
+                <div id="full-line"></div>
+            </div>
+        <div class="billing">
+            <p>Monthly Billing</p>
+            <div id="toggle"><div id="toggle-button"></div></div>
+            <p>Yearly Billing <span id="discount-wrapper"><span id="minus">-</span>25% <span id="discount">discount</span></span></p>
+        </div>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li><img src="images/icon-check.svg" alt="check icon">Unlimited websites</li>
+            <li><img src="images/icon-check.svg" alt="check icon">100% data ownership</li>
+            <li><img src="images/icon-check.svg" alt="check icon">Email reports</li>
+        </ul>
+
+        <button>Start my trial</button>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
